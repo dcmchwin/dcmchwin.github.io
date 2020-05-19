@@ -7,8 +7,8 @@ layout: default
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      {% assign date_format = site.minima.date_format | default: "%-d %B %Y" %}
-      <p>{{ post.date | date: date_format }}</p>
+      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+      <p class="post-date">{{ post.date | date: date_format }}</p>
 
       <div class="entry">
         {{ post.excerpt }}
